@@ -12,7 +12,7 @@ export default class App extends React.Component {
   }
 
   onIdentify = () => {
-    analytics.identify(this.state.userId)
+    analytics.identify(this.state.userId, { email: this.state.userId })
   }
 
   onTrack = () => {
